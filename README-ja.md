@@ -1,5 +1,12 @@
 # Capetown CMS
 
+[![CI](https://github.com/b4moss/capetown-cms/actions/workflows/ci.yml/badge.svg)](https://github.com/b4moss/capetown-cms/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/codecov/c/github/b4moss/capetown-cms)](https://codecov.io/gh/b4moss/capetown-cms)
+[![PHP](https://img.shields.io/badge/PHP-Composer-777BB4?logo=php&logoColor=white)](https://github.com/b4moss/capetown-cms)
+[![Release](https://img.shields.io/github/v/release/b4moss/capetown-cms)](https://github.com/b4moss/capetown-cms/releases)
+[![License](https://img.shields.io/github/license/b4moss/capetown-cms)](https://github.com/b4moss/capetown-cms/blob/develop/LICENSE)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/b4moss/capetown-cms/badge)](https://securityscorecards.dev/viewer/?uri=github.com/b4moss/capetown-cms)
+
 **Capetown CMS**は、現代のウェブ制作のニーズを取り入れるために設計された、現代的でモジュラー設計のCMSです。
 
 柔軟性と拡張性を念頭に置いて構築されており、開発者がコア機能を直接変更することなくカスタマイズできる強力なオーバーライドシステムを提供します。
