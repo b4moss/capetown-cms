@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, develop]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
+
+      - name: PHP syntax check
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' f; do
+            php -l "$f"
+          done < <(find dev -name '*.php' -print0)
+
+      - name: Placeholder coverage note
+        run: |
+          mkdir -p coverage
+          # No unit suite yet; emit empty lcov so Codecov wiring is in place.
+          printf 'TN:\nSF:\nend_of_record\n' > coverage/lcov.info
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/lcov.info
+          fail_ci_if_error: false
+          verbose: true
