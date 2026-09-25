@@ -1,17 +1,6 @@
-# Capetown CMS Docs
+# Capetown CMS Docs (en)
 
-Capetown CMS: Navigating a New Era of Content Management. Embark on a new journey in content management, turning the Cape of Good Hope toward a future of limitless possibilities.
-
-## index
-1. [What Capetown CMS is](./statement.md)
-1. [Architecture](./architecture.md)
-
-## Contribute
-
-Please check [Contribute guideline](./CONTRIBUTING.md).
-
-## Member
-- **DevLeader:** [@kohki-shikata](https://github.com/kohki-shikata)
-
-## License
-[MITLicense](../LICENSE)
+* [Statement](../specs/en/statement.md)
+* [Architecture](../specs/en/architecture.md)
+* [CONTRIBUTING](../specs/contrib/CONTRIBUTING.en.md)
+* [Hub](../index.md)
