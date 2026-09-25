@@ -48,7 +48,7 @@ E2EテストはLaravel Duskで提供される予定。
 
 ## コントリビューション
 
-コードオブコンドクトやプルリクエストの提出プロセスについては、[CONTRIBUTING.md](./docs/ja/CONTRIBUTING.md)をお読みください。
+コードオブコンドクトやプルリクエストの提出プロセスについては、[CONTRIBUTING.md](./docs/specs/contrib/CONTRIBUTING.ja.md)をお読みください。
 
 ## バージョニング
 

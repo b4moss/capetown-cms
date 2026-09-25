@@ -45,7 +45,7 @@ Under consideration.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./docs/en/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](./docs/specs/contrib/CONTRIBUTING.en.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
