@@ -1,5 +1,12 @@
 # Capetown CMS
 
+[![CI](https://github.com/b4moss/capetown-cms/actions/workflows/ci.yml/badge.svg)](https://github.com/b4moss/capetown-cms/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/codecov/c/github/b4moss/capetown-cms)](https://codecov.io/gh/b4moss/capetown-cms)
+[![PHP](https://img.shields.io/badge/PHP-Composer-777BB4?logo=php&logoColor=white)](https://github.com/b4moss/capetown-cms)
+[![Release](https://img.shields.io/github/v/release/b4moss/capetown-cms)](https://github.com/b4moss/capetown-cms/releases)
+[![License](https://img.shields.io/github/license/b4moss/capetown-cms)](https://github.com/b4moss/capetown-cms/blob/develop/LICENSE)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/b4moss/capetown-cms/badge)](https://securityscorecards.dev/viewer/?uri=github.com/b4moss/capetown-cms)
+
 **Capetown CMS** is a modern, modular CMS designed to embrace the needs of the next generation of web development. It is built with flexibility and extensibility in mind, offering a robust override system that allows developers to customize core functionality without directly modifying it. Capetown is developed to ensure compatibility with WordPress data, allowing for seamless migration and interaction between platforms.
 
 [See more details at official docs](./docs/en/index.md)
@@ -65,4 +72,3 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 * [Concrete CMS](https://www.concretecms.org/)
 * [Laravel](https://laravel.com/)
 * [Ruby on Rails](https://rubyonrails.org/)
-
