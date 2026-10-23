@@ -10,7 +10,7 @@ timestamp: 2026-08-13T14:53:50Z
 `薄いDDD`とは、合同会社 知的・自転車で採用されている、軽量な開発方針である。
 
 テスト方針: [tdd.md](./tdd.md)  
-ディレクトリの対応は、各プロジェクトの `docs/main.md` を正とする。
+ディレクトリの対応は、各プロジェクトの `docs/README.md`（pillar）を正とする。
 
 ## DDDとは
 
@@ -37,7 +37,7 @@ Web アプリケーションではこれに加え、Controller から呼ぶ **`V
 `{controllers,services,repositories,validations}/`
 
 Controller は描画ヘルパ経由でのみ HTML を返し、テンプレ文字列を直書きしない。  
-フロントの資産の扱い（バンドル、セルフホスト等）は各プロジェクトの `docs/main.md` に書く。
+フロントの資産の扱い（バンドル、セルフホスト等）は各プロジェクトの `docs/README.md` に書く。
 
 ## Controller層
 

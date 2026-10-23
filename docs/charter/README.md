@@ -3,7 +3,7 @@ type: Charter
 title: 憲章（charter）
 description: 合同会社 知的・自転車の開発方針の最上位取り決め。
 tags: [charter]
-timestamp: 2026-08-13T14:53:50Z
+timestamp: 2026-10-08
 ---
 # 憲章（charter）
 
@@ -12,15 +12,15 @@ timestamp: 2026-08-13T14:53:50Z
 
 この憲章は、合同会社 知的・自転車のOSS部門によって[ホスト](https://github.com/b4moss/charter)されています。
 
-各プロジェクトには、この憲章リポジトリの`docs`ブランチをルートに展開し、共有します。
+各プロジェクトには、この憲章リポジトリ **`main` ブランチの `docs/`**（OKF v0.1）を共有します。かつての `docs` 専用ブランチは使いません。
 
 共有の仕方は、プロジェクトに応じて適切なものを以下から選びます。
 
-1. charter を `remote` に追加し、`charter/docs` をマージ。
-2. charter を、`.gitsubmodule` で追加。
-3. charter を `remote` に追加し、`subtree` で呼び出し。
+1. charter を `remote` に追加し、`charter/main` をマージ（共有対象は `docs/`）。
+2. charter を submodule で追加。
+3. charter を `remote` に追加し、`subtree` で `docs/` を取り込む。
 
-どの方式を取るかは、プロジェクトに応じてPOが判断をします。
+どの方式を取るかは、プロジェクトに応じてPOが判断をします。具体的なコマンド例はリポジトリルートの [README.md](../../README.md) を参照。
 
 ## 憲章の更新
 
@@ -49,7 +49,11 @@ timestamp: 2026-08-13T14:53:50Z
 | [doc-rule.md](./doc-rule.md) | ドキュメント運用方針 |
 | README.md | 本ドキュメント |
 
-プロダクト要件の正本は、各プロジェクトの `docs/main.md` および `docs/specs/` とする。憲章には詰め込まない。
+プロダクト要件の正本は、各プロジェクトの `docs/README.md`（pillar）および `docs/specs/` とする。`docs/index.md` は OKF 索引のみ。憲章には詰め込まない。
+
+## 記述フォーマット
+
+当憲章を含め、 **OKF v0.1** をベースとした記述でドキュメントを記述します。
 
 ## 適用範囲
 

@@ -27,6 +27,7 @@ timestamp: 2026-08-25T02:54:35Z
   - `production`: 本番環境として運用されるもののブランチ。必ずmainからPRし、マージする。
   - `release`: SaaSやWebサイトでなくパッケージマネージャから配信されるものはこのブランチをプロダクション相当とする。
 - ロードマップに従った開発を行うブランチ: `dev-vX.Y.Z` - 必ず、最新のdevelopから新規ブランチを生やす。
+  - ただし、必要・TPOに応じてdevelop以外のブランチから生やしたりcherry-pickの必要がある場合は、適宜行うこと。
 - フィーチャーブランチ: `feat-*` - 新規追加機能の場合に作成するブランチ。
   - 機能ごとに適切なブランチの適切なコミットから生やす。
   - 何が適切かはその時の文脈次第なので、適切なブランチ・コミットの判断がつかない場合は、POに事前相談する。 
@@ -37,20 +38,21 @@ timestamp: 2026-08-25T02:54:35Z
 
 ### ロードマップ上のバージョンを満たす実装が終わった時
 
-- `dev-v0.n.0` - PR -> `develop`: CIを必ず通すこと。
+- `dev-v0.n.0` - PR -> `develop`: CIを必ず通すこと。(参考: [CI/CDルール](./ci-cd.md))
 
 ### ステージングで確認したい場合
 
-- (新機能を統合した)`develop` -> `main` - PR(PR時にCI。念のため) -> `staging`(マージ時にCD)
+- (新機能を統合した)`develop` -> `main` - PR-> `staging`(マージ時にCD) (参考: [CI/CDルール](./ci-cd.md))
 
 ### プロダクションへのリリース
 
-- (新機能を統合した)`develop` -> `main` - PR -> `production`(マージ時にCD): stagingマージ時にCIが通ったものとみなす
+- (新機能を統合した)`develop` -> `main` - PR -> `production`(マージ時にCD): stagingマージ時にCIが通ったものとみなす (参考: [CI/CDルール](./ci-cd.md))
 
 ### 直接push禁止ブランチ
 
 - main
 - develop
+- dev-*
 - staging
 - production
 
@@ -81,9 +83,10 @@ timestamp: 2026-08-25T02:54:35Z
 
 - コンテキストやテーマごとに応じて、複数ファイル・複数ハンクのコミットを許容する 
 
-## タグの切り方
+## 参考
 
-- [versioning-rule.md](./versioning-rule.md)を参照。
+- タグについて: [versioning-rule.md](./versioning-rule.md)
+- CI/CDについて: [ci-cd.md](./ci-cd.md)
  
 -----
 
